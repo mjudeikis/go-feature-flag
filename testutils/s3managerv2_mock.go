@@ -1,14 +1,18 @@
+//go:build test
+// +build test
+
 package testutils
 
 import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/aws/aws-sdk-go-v2/feature/s3/manager"
-	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"io"
 	"os"
 	"strings"
+
+	"github.com/aws/aws-sdk-go-v2/feature/s3/manager"
+	"github.com/aws/aws-sdk-go-v2/service/s3"
 )
 
 type S3ManagerV2Mock struct {
